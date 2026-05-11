@@ -123,15 +123,8 @@ Voice / Camera Input → AI Recognition → Command Processing → Robot / Vehic
 ## 🚗 Highway Driving Simulation
 
 <p align="center">
-  <img src="results/gameplay_demo.png" width="800"/>
-</p>
-
----
-
-## ✋ Hand Gesture Detection
-
-<p align="center">
-  <img src="results/hand_tracking_demo.png" width="800"/>
+  <img src="<img width="1919" height="995" alt="image" src="https://github.com/user-attachments/assets/821723d7-6ba3-4161-868d-7e094c695525" />
+" width="800"/>
 </p>
 
 ---
