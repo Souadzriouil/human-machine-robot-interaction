@@ -2,7 +2,11 @@ opencv-python
 mediapipe
 pygame
 gymnasium
-speechrecognition
+SpeechRecognition
 pyttsx3
 numpy
 jupyter
+keyboard
+pywin32
+pyaudio
+highway-env
