@@ -1,14 +1,14 @@
 <div align="center">
 
-# 🤖 Human-Machine Interaction using Voice Commands & Hand Gesture Recognition
+# 🤖 Human-Machine Robot Interaction
 
-### 🧠 AI-Powered Robotics Interaction using Speech Recognition and Computer Vision
+### 🧠 AI-Powered Voice & Hand Gesture Control System using Computer Vision and Speech Recognition
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
   <img src="https://img.shields.io/badge/MediaPipe-FF6F00?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Robotics-AI-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/AI-Robotics-success?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/HCI-Human%20Machine%20Interaction-blue?style=for-the-badge"/>
 </p>
 
@@ -18,26 +18,26 @@
 
 # 📌 Overview
 
-This project explores modern Human-Machine Interaction (HMI) techniques by combining:
+This project explores modern **Human-Machine Interaction (HMI)** by combining:
 
 - 🎤 Voice-controlled robotics
 - ✋ Hand gesture recognition
-- 🤖 Virtual robot simulation
-- 🚗 Gesture-controlled virtual driving
+- 🚗 Gesture-controlled driving simulation
+- 🤖 Real-time AI interaction
 
-The project demonstrates how Artificial Intelligence, Computer Vision, and Speech Recognition can create more intuitive and immersive interactions between humans and machines.
+The project demonstrates how **Artificial Intelligence**, **Computer Vision**, and **Speech Recognition** can create more intuitive and immersive interactions between humans and machines.
 
 ---
 
-# 🚀 Sub-Projects
+# 🚀 Main Features
 
 ## 🎤 Voice-Controlled Robot
 
 A virtual robot controlled using French voice commands such as:
 
-- avance
-- recule
-- stop
+- `avance`
+- `recule`
+- `stop`
 
 ### Features
 
@@ -46,16 +46,9 @@ A virtual robot controlled using French voice commands such as:
 ✅ Real-time robot control  
 ✅ Safety stop system  
 
-### Technologies
-
-- Python
-- speech_recognition
-- pyttsx3
-- gymnasium
-
 ---
 
-## ✋ Hand Gesture Controlled Car
+## ✋ Hand Gesture Controlled Driving
 
 A virtual driving simulation controlled using hand gestures detected through a webcam.
 
@@ -64,35 +57,19 @@ A virtual driving simulation controlled using hand gestures detected through a w
 ✅ Hand gesture detection  
 ✅ Real-time camera processing  
 ✅ Virtual driving environment  
-✅ Multi-level gameplay  
 ✅ Gesture-based acceleration and steering  
-
-### Gesture Mapping
-
-| Gesture | Action |
-|---|---|
-| Left Movement | Turn Left |
-| Right Movement | Turn Right |
-| Up Movement | Accelerate |
-| Down Movement | Brake |
-
-### Technologies
-
-- OpenCV
-- MediaPipe
-- pygame
-- highway-env
+✅ Interactive gameplay  
 
 ---
 
-# 🧰 Tech Stack
+# 🧰 Technologies Used
 
 | Category | Technologies |
 |---|---|
 | Programming | Python |
 | Computer Vision | OpenCV, MediaPipe |
-| Speech Recognition | speech_recognition |
-| Robotics Simulation | gymnasium |
+| Speech Recognition | SpeechRecognition |
+| Robotics Simulation | Gymnasium |
 | Game Environment | highway-env |
 | Audio | pyttsx3, pygame |
 
@@ -104,14 +81,12 @@ A virtual driving simulation controlled using hand gestures detected through a w
 human-machine-robot-interaction/
 │
 ├── notebooks/
-│   └── Robot_Interaction_Homme_Machine.ipynb
-│
-├── report/
-│   └── Projet_Robotique.pdf
+│   ├── Robot_Interaction_Homme_Machine.ipynb
+│   └── acceleration.wav
 │
 ├── results/
-│   ├── voice_control_demo.png
-│   └── gesture_control_demo.png
+│   ├── gameplay_demo.png
+│   └── hand_tracking_demo.png
 │
 ├── README.md
 ├── requirements.txt
@@ -132,25 +107,38 @@ Voice / Camera Input → AI Recognition → Command Processing → Robot / Vehic
 
 ---
 
+# 🎮 Gesture Controls
+
+| Hand Movement | Action |
+|---|---|
+| ⬅️ Left | Turn Left |
+| ➡️ Right | Turn Right |
+| ⬆️ Up | Accelerate |
+| ⬇️ Down | Brake |
+
+---
+
 # 📸 Project Demonstration
 
-## 🎤 Voice-Controlled Robot
+## 🚗 Highway Driving Simulation
 
 <p align="center">
-  <img src="results/voice_control_demo.png" width="750"/>
+  <img src="results/gameplay_demo.png" width="800"/>
 </p>
 
 ---
 
-## ✋ Gesture-Controlled Driving
+## ✋ Hand Gesture Detection
 
 <p align="center">
-  <img src="results/gesture_control_demo.png" width="750"/>
+  <img src="results/hand_tracking_demo.png" width="800"/>
 </p>
 
 ---
 
 # 📦 Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/Souadzriouil/human-machine-robot-interaction.git
@@ -166,6 +154,8 @@ pip install -r requirements.txt
 ---
 
 # ▶️ Run the Project
+
+Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
@@ -186,10 +176,14 @@ opencv-python
 mediapipe
 pygame
 gymnasium
-speechrecognition
+SpeechRecognition
 pyttsx3
 numpy
 jupyter
+keyboard
+pywin32
+pyaudio
+highway-env
 ```
 
 ---
@@ -199,8 +193,8 @@ jupyter
 - Real robot implementation
 - Hybrid voice + gesture interaction
 - Deep Learning gesture recognition
-- Advanced NLP voice understanding
 - Smart autonomous navigation
+- Real-time AI assistant integration
 
 ---
 
@@ -210,7 +204,7 @@ jupyter
 
 ## Souad Zriouil
 
-### AI Engineer | Data Scientist | Robotics & NLP Enthusiast
+### AI Engineer | Data Scientist | Robotics & Computer Vision Enthusiast
 
 <p align="center">
   <a href="https://github.com/Souadzriouil">
