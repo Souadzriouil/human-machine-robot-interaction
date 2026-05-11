@@ -1,0 +1,8 @@
+opencv-python
+mediapipe
+pygame
+gymnasium
+speechrecognition
+pyttsx3
+numpy
+jupyter
