@@ -8,8 +8,9 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
   <img src="https://img.shields.io/badge/MediaPipe-FF6F00?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/AI-Robotics-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Robotics-AI-success?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/HCI-Human%20Machine%20Interaction-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Computer%20Vision-Real%20Time-orange?style=for-the-badge"/>
 </p>
 
 </div>
@@ -18,14 +19,14 @@
 
 # 📌 Overview
 
-This project explores modern **Human-Machine Interaction (HMI)** by combining:
+This project explores advanced **Human-Machine Interaction (HMI)** techniques by combining:
 
 - 🎤 Voice-controlled robotics
-- ✋ Hand gesture recognition
+- ✋ Real-time hand gesture recognition
 - 🚗 Gesture-controlled driving simulation
-- 🤖 Real-time AI interaction
+- 🤖 AI-powered interaction systems
 
-The project demonstrates how **Artificial Intelligence**, **Computer Vision**, and **Speech Recognition** can create more intuitive and immersive interactions between humans and machines.
+The project demonstrates how **Artificial Intelligence**, **Computer Vision**, and **Speech Recognition** can create more intuitive, immersive, and natural communication between humans and machines.
 
 ---
 
@@ -41,24 +42,36 @@ A virtual robot controlled using French voice commands such as:
 
 ### Features
 
-✅ Speech recognition  
+✅ Speech recognition using microphone input  
 ✅ Voice feedback confirmation  
 ✅ Real-time robot control  
 ✅ Safety stop system  
+✅ Interactive command execution  
 
 ---
 
 ## ✋ Hand Gesture Controlled Driving
 
-A virtual driving simulation controlled using hand gestures detected through a webcam.
+A virtual highway driving simulation controlled using hand gestures detected through a webcam.
 
 ### Features
 
-✅ Hand gesture detection  
-✅ Real-time camera processing  
-✅ Virtual driving environment  
-✅ Gesture-based acceleration and steering  
-✅ Interactive gameplay  
+✅ Real-time hand tracking  
+✅ Gesture recognition using MediaPipe  
+✅ Computer vision-based interaction  
+✅ Gesture-controlled acceleration and steering  
+✅ Interactive gameplay simulation  
+
+---
+
+# 🎮 Gesture Mapping
+
+| Gesture | Action |
+|---|---|
+| ✋ Open Hand | Turn Right |
+| 🤘 Horn Gesture | Accelerate |
+| ☝️ One Finger | Slow Down |
+| ✊ Closed Hand | Turn Left |
 
 ---
 
@@ -71,7 +84,8 @@ A virtual driving simulation controlled using hand gestures detected through a w
 | Speech Recognition | SpeechRecognition |
 | Robotics Simulation | Gymnasium |
 | Game Environment | highway-env |
-| Audio | pyttsx3, pygame |
+| Audio Processing | pyttsx3, pygame |
+| Real-Time Interaction | Webcam & Microphone |
 
 ---
 
@@ -80,13 +94,17 @@ A virtual driving simulation controlled using hand gestures detected through a w
 ```bash
 human-machine-robot-interaction/
 │
-├── notebooks/
-│   ├── Robot_Interaction_Homme_Machine.ipynb
+├── assets/
 │   └── acceleration.wav
 │
+├── notebooks/
+│   └── human_machine_interaction.ipynb
+│
 ├── results/
-│   ├── gameplay_demo.png
-│   └── hand_tracking_demo.png
+│   ├── faster_gesture.jpeg
+│   ├── left_gesture.jpeg
+│   ├── right_gesture.jpeg
+│   └── slower_gesture.jpeg
 │
 ├── README.md
 ├── requirements.txt
@@ -95,37 +113,68 @@ human-machine-robot-interaction/
 
 ---
 
-# ⚙️ Workflow
+# ⚙️ System Workflow
 
 <div align="center">
 
 ```text
-Voice / Camera Input → AI Recognition → Command Processing → Robot / Vehicle Control
+Voice / Camera Input
+          ↓
+AI Recognition System
+          ↓
+Command Processing
+          ↓
+Robot / Vehicle Control
 ```
 
 </div>
 
 ---
 
-# 🎮 Gesture Controls
+# 📸 Gesture Recognition Results
 
-| Hand Movement | Action |
-|---|---|
-| ⬅️ Left | Turn Left |
-| ➡️ Right | Turn Right |
-| ⬆️ Up | Accelerate |
-| ⬇️ Down | Brake |
+## 🚀 Accelerate Gesture
+
+<p align="center">
+  <img src="results/faster_gesture.jpeg" width="750"/>
+</p>
 
 ---
 
-# 📸 Project Demonstration
-
-## 🚗 Highway Driving Simulation
+## ➡️ Right Turn Gesture
 
 <p align="center">
-  <img src="<img width="1919" height="995" alt="image" src="https://github.com/user-attachments/assets/821723d7-6ba3-4161-868d-7e094c695525" />
-" width="800"/>
+  <img src="results/right_gesture.jpeg" width="750"/>
 </p>
+
+---
+
+## 🐢 Slow Down Gesture
+
+<p align="center">
+  <img src="results/slower_gesture.jpeg" width="750"/>
+</p>
+
+---
+
+## ⬅️ Left Turn Gesture
+
+<p align="center">
+  <img src="results/left_gesture.jpeg" width="750"/>
+</p>
+
+---
+
+# 🚗 Highway Driving Simulation
+
+The system controls a virtual car in a simulated highway environment using real-time hand gestures detected by a webcam.
+
+### Supported Controls
+
+- Steering
+- Acceleration
+- Deceleration
+- Interactive gameplay navigation
 
 ---
 
@@ -157,7 +206,7 @@ jupyter notebook
 Open:
 
 ```bash
-notebooks/Robot_Interaction_Homme_Machine.ipynb
+notebooks/human_machine_interaction.ipynb
 ```
 
 ---
@@ -185,9 +234,10 @@ highway-env
 
 - Real robot implementation
 - Hybrid voice + gesture interaction
-- Deep Learning gesture recognition
-- Smart autonomous navigation
+- Deep Learning gesture classification
 - Real-time AI assistant integration
+- Autonomous driving interaction
+- Multi-hand gesture recognition
 
 ---
 
